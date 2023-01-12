@@ -4,7 +4,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /* align-items: center; */
   align-content: space-evenly;
   background-color: #666666;
   font-family: "Indie Flower", cursive;
@@ -17,7 +16,10 @@ main {
   align-items: center;
   background-color: gray;
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5));
-  border: 1px solid black;
+  /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  */
+  /* border: 1px solid black; */
+  padding: 1px;
   width: 20%;
   aspect-ratio: 1/1;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -26,19 +28,21 @@ main {
 .giallo {
   background-color: #f0f0bc;
   transform: rotate(-5deg);
-  animation: attacco3 3s;
+  animation: attacco3 2s;
 }
 .verde {
   background-color: #cafaca;
   transform: rotate(5deg);
-  animation: attacco 3s;
+  animation: attacco 3s ease-in-out;
 }
 .blu {
   background-color: #c5c5f0;
   transform: rotate(-10deg);
-  animation: attacco2 3s;
+  animation: attacco2 3s linear;
 }
 .task h2 {
+  padding-bottom: 20px;
+
   font-weight: 900;
   font-size: 3em;
 }
